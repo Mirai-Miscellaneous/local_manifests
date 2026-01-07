@@ -24,12 +24,7 @@
   <!-- Vince -->
   <project path="device/xiaomi/vince"        name="android_device_xiaomi_vince"        groups="device" remote="alice" revision="lineage-20_4.19"/>
   <project path="vendor/xiaomi/vince"        name="proprietary_vendor_xiaomi_vince"    groups="device" remote="alice" revision="a13/master"/>
-
-  <!-- kernel-vince-ysl-k4.19 -->
-  <project path="kernel/xiaomi/msm8953"        name="kernel_msm-4.19"    groups="device" remote="alice" revision="master"/>
-
-  <!-- kernel-vince-ysl-k4.19 -->
-  <project path="kernel/xiaomi/msm8953/techpack/xiaomi-titanium"        name="kernel_techpack_xiaomi-titanium"    groups="device" remote="alice" revision="techpack/titanium/4.19/master"/>
+  <project path="kernel/xiaomi/vince" name="kernel_msm-4.9"                                  remote="mi-thorium" revision="vince/a13/master"/>
 
   <!-- Hardware -->
   <project path="hardware/mithorium/common" name="android_hardware_mithorium_common" groups="device" remote="mi-thorium" revision="lineage">
