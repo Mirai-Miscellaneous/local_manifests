@@ -30,7 +30,7 @@
   <project path="vendor/xiaomi/vince"        name="proprietary_vendor_xiaomi_vince"    groups="device" remote="alice" revision="lineage-20"/>
 
   <!-- VINCE-CAMERA-COMMON -->
-  <project path="device/xiaomi/vince/camera"        name="android_device_xiaomi_vince_camera"        groups="device" remote="alice" revision="main" />
+  <project path="device/xiaomi/vince/camera"        name="android_device_xiaomi_vince_camera"        groups="device" remote="night" revision="main" />
 
   <!-- kernel-vince-ysl-k4.19 -->
   <project path="kernel/xiaomi/msm8953"        name="kernel_msm-4.19"    groups="device" remote="alice" revision="master"/>
