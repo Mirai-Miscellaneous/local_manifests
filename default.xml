@@ -30,13 +30,13 @@
   <project path="vendor/xiaomi/vince"        name="proprietary_vendor_xiaomi_vince"    groups="device" remote="alice" revision="lineage-20"/>
 
   <!-- VINCE-CAMERA-COMMON -->
-  <project path="device/xiaomi/vince/camera"        name="android_device_xiaomi_vince_camera"        groups="device" remote="night" revision="main" />
+  <project path="device/xiaomi/vince/camera"        name="android_device_xiaomi_msm8953-camera"        groups="device" remote="night" revision="a11/vince/master" />
 
   <!-- kernel-vince-ysl-k4.19 -->
-  <project path="kernel/xiaomi/msm8953"        name="kernel_msm-4.19"    groups="device" remote="alice" revision="master"/>
-
-  <!-- kernel-vince-ysl-k4.19 -->
-  <project path="kernel/xiaomi/msm8953/techpack/xiaomi-titanium"        name="kernel_techpack_xiaomi-titanium"    groups="device" remote="alice" revision="techpack/titanium/4.19/master"/>
+  <project path="kernel/xiaomi/msm8953"        name="android_kernel_qcom-msm8953"    groups="device" remote="night" revision="lineage-20"/>
+  <project path="kernel/xiaomi/msm8953/arch/arm64/boot/dts/vendor-legacy"        name="kernel_devicetree_msm-4.19"    groups="device" remote="night" revision="main"/>
+  <project path="kernel/xiaomi/msm8953/drivers/staging/prima"        name="vendor_qcom_opensource_wlan_prima"    groups="device" remote="mi-thorium" revision="wlan/LA.UM.9.6.4/mithorium/master"/>
+  <project path="kernel/xiaomi/msm8953/techpack/xiaomi-titanium"        name="kernel_techpack_xiaomi-titanium"    groups="device" remote="night" revision="techpack/titanium/4.19/master"/>
 
   <!-- Hardware -->
   <project path="hardware/mithorium/common" name="android_hardware_mithorium_common" groups="device" remote="mi-thorium" revision="lineage">
