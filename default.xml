@@ -17,6 +17,11 @@
             fetch="https://github.com/Project-Nightcord"
             revision="lineage-20.0" />
 
+  <remote name="kaguya"
+            fetch="https://github.com/imren0x"
+            revision="lineage-20.0" />
+
+
   <!-- Common -->
   <project path="device/xiaomi/mithorium-common" name="android_device_xiaomi_mithorium-common"     groups="device" remote="alice" revision="a13/master" />
   <project path="vendor/xiaomi/mithorium-common" name="proprietary_vendor_xiaomi_mithorium-common" groups="device" remote="mi-thorium" revision="a13/master" />
@@ -33,10 +38,11 @@
   <project path="device/xiaomi/vince/camera"        name="android_device_xiaomi_vince_camera"        groups="device" remote="night" revision="main" />
 
   <!-- kernel-vince-ysl-k4.19 -->
-  <project path="kernel/xiaomi/msm8953"        name="android_kernel_qcom-msm8953"    groups="device" remote="night" revision="lineage-20"/>
-  <project path="kernel/xiaomi/msm8953/arch/arm64/boot/dts/vendor-legacy"        name="kernel_devicetree_msm-4.19"    groups="device" remote="night" revision="main"/>
+  <project path="kernel/xiaomi/msm8953"        name="msm-4.19"    groups="device" remote="kaguya" revision="lineage-20"/>
+  <project path="kernel/xiaomi/msm8953/arch/arm64/boot/dts/vendor-legacy"        name="kernel_devicetree_msm-4.19"    groups="device" remote="kaguya" revision="main"/>
   <project path="kernel/xiaomi/msm8953/drivers/staging/prima"        name="vendor_qcom_opensource_wlan_prima"    groups="device" remote="mi-thorium" revision="wlan/LA.UM.9.6.4/mithorium/master"/>
-  <project path="kernel/xiaomi/msm8953/techpack/xiaomi-titanium"        name="kernel_techpack_xiaomi-titanium"    groups="device" remote="night" revision="techpack/titanium/4.19/master"/>
+  <project path="kernel/xiaomi/msm8953/techpack/xiaomi-titanium"        name="kernel_techpack_xiaomi-titanium"    groups="device" remote="kaguya" revision="techpack/titanium/4.19/master"/>
+  <project path="kernel/xiaomi/msm8953/techpack/audio-legacy"        name="kernel_techpack_audio-legacy"    groups="device" remote="kaguya" revision="audio/4.19/master"/>
 
   <!-- Hardware -->
   <project path="hardware/mithorium/common" name="android_hardware_mithorium_common" groups="device" remote="mi-thorium" revision="lineage">
